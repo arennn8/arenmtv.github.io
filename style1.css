@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+#home,
+#card-container {
+    border-bottom: 8px solid #737373;
+}
+#home {
+    background: url("motorbg.jpg"), rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+#home header {
+    padding: 20px 55px;
+    position: relative;
+}
+
+#home header img {
+    width: 135px;
+}
+
+#home header .nav-options {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 1);
+    padding: 0 200;
+    transform: 0.5s;
+    background-blend-mode: overlay;
+    transition: 0.5s;
+}
+
+#home header .nav-options .logo{
+    line-height: 75px;
+    color: #fff;
+    text-transform: none;
+    font-size: 32px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+#home header .nav-options.animate{
+    top: -100px;
+}
+#home header .nav-options.sticky{
+    top: 0;
+}
+
+#home .mainlogo img{
+    width: 50%;
+    opacity: 0.5;
+    margin-top: 100px;
+}
+
+#home .social .fblogo{
+ width: 73px;
+ top: 40%;
+ left: 41%;
+ position: absolute;
+ filter: grayscale(75%);
+ transition: transform .2s;
+}
+
+#home .social .fblink{
+font-size: 35px;
+ top: 42%;
+ left: 48%;
+ position: absolute;
+ filter: grayscale(75%);
+ font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#home .social .iglogo{
+ width: 80px;
+ top: 52.6%;
+ left: 40.8%;
+ position: absolute;
+ filter: grayscale(75%);
+ transition: transform .2s;
+}
+
+#home .social .iglink{
+ font-size: 35px;
+ top: 55%;
+ left: 48%;
+ position: absolute;
+ filter: grayscale(75%);
+ font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#home .social .ytlogo{
+ width: 80px;
+ top: 65%;
+ left: 40.8%;
+ position: absolute;
+ filter: grayscale(75%);
+ transition: transform .2s;
+}
+
+#home .social .ytlink{
+font-size: 35px;
+ top: 69%;
+ left: 48%;
+ position: absolute;
+ filter: grayscale(75%);
+ font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.ytlogo:hover {
+  transform: scale(1.5);
+}
+.fblogo:hover {
+  transform: scale(1.5);
+}
+.iglogo:hover {
+  transform: scale(1.5);
+}
+
+#home header .nav-options ul{
+    list-style: none;
+    float: right;
+    line-height: 80px;
+    margin-left: 20px;
+}
+
+#home header .nav-options ul li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: transform .2s;
+    left: 50px;
+}
+#home header .nav-options ul li a{
+    color: ghostwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+     font-family: "Times New Roman", Times, serif;
+}
+#home header .nav-options ul li:hover{
+    transform: scale(1.5);
+}
+#card-container {
+    background-color: black;
+    padding: 70px 45px;
+}
+
+#card-container .card,
+#card-container .card-text {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+#card-container .card-text1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#card-container .card1 img{
+    margin-left: 50px;
+    width: 500px;
+    box-shadow: 5px 10px #737373;
+}
+
+#card-container .card-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#card-container .card-text h2 {
+    font-size: 26px;
+}
+footer {
+  height: 80px;
+  background-color: #131a22;
+  padding: 20px;
+}
+
+footer ul {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+footer span {
+  display: block;
+  color: white;
+  font-size: 11px;
+  width: fit-content;
+  margin: 0 auto;
+}

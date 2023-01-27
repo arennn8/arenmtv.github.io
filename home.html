@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div class="nav-options">
+            <img class="logo" src="logo.png" alt="Me Logo">
+                <ul>
+                   <li><a href="home.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+        </header>
+            <div class="mainlogo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="social">
+
+                   <a href="https://www.facebook.com/jamesallen.pore.9/" target="_blank" rel="noopener noreferrer"> <img class="fblogo" src="fblogo.png" alt="fb logo"> </a>
+                            <p class="fblink"> @jamesallen.pore.9 </p>
+
+                   <a href="https://www.instagram.com/888jap/" target="_blank" rel="noopener noreferrer"> <img class="iglogo" src="iglogo.png" alt="ig logo"> </a>
+                            <p class="iglink"> @888aren </p>
+                            
+                   <a href="https://www.youtube.com/channel/UCtF1idD9V9kyrrpYJsWI9uQ" target="_blank" rel="noopener noreferrer"> <img class="ytlogo" src="ytlogo.png" alt="yt logo"> </a>
+                            <p class="ytlink">@arenmotovlog </p>
+            </div>
+    </div>
+
+
+    <div id="card-container">
+        <div class="card-text">
+            <h1>August 14, 2022</h1>
+            <h2>Cavite - Batangas Loop</h2>
+        </div>
+        <div class="card">
+           <video width="500" height="300" controls  autoplay loop muted>
+           <source src="broom.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+           </video>
+        </div>     
+    </div>
+
+   <div id="card-container">
+        <div class="card-text1">
+            <h1>July 7, 2022<br>SKYRANCH & FANTASY WORLD</h1>
+
+        </div>
+        <div class="card1"> 
+        <img src="fantasy.jpg" alt="Fantasy World">
+        <img  src="skyranch.jpg" alt="skyranch tagaytay">
+        </div>
+    </div>
+<footer>
+        <ul>
+            <ul>
+            <li><a href="#">Conditions of Use</a></li>
+            <li><a href="#">Privacy Notice</a></li>
+        </ul>
+        <span>&copy; 2023,  Aren MTV</span>
+    </footer>
+
+<script type="text/javascript">
+        $(function(){
+            var scroll = $(document).scrollTop();
+            var navHeight = $('.nav-options').outerHeight();
+
+            $(window).scroll(function(){
+                var scrolled = $(document).scrollTop();
+                if(scrolled > navHeight){
+                    $('.nav-options').addClass('animate');
+                }
+                else{
+                    $('.nav-options').removeClass('animate');
+                }
+
+            })
+
+            if(scrolled > scroll){
+                $('.nav-options').removeClass('sticky');
+            }
+            else{
+                $('.nav-options').addClass('sticky');
+            }
+            scroll = $(document).scrollTop();
+        })
+ </script>
+
+</body>
+</html>

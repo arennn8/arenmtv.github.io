@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>About Me!</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div class="nav-options">
+            <img class="logo" src="logo.png" alt="Me Logo">
+                <ul>
+                   <li><a href="home.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+        </header>
+    </div>
+     <div id="div-1">
+        <h1>JAMES ALLEN </br>G. PORE </h1>
+        <h2>09/08/2002</h2>
+        <div class="bg2">
+        <img src="bg2.png" alt="helmet man">
+        </div>
+       
+     </div>
+<div class="main-content">
+    <h1> SKILLS </h1>
+    <div class="skills">
+            <div>
+                <p>Programming</p>
+                <img src="prog.jpg" alt="PROGRAMMING">
+              
+            </div>
+
+            <div>
+                <p>Video Editing</p>
+                <img src="videdit.jpeg" alt="VIDEO EDITING">
+            </div>
+
+            <div>
+                <p>Photo Editing</p>
+                <img src="ps.jpg" alt="PHOTOSHOP">
+
+            </div>
+    </div>
+</div>
+<div class="main-content1">
+    <h1> HOBBIES </h1>
+    <div class="skills1">
+            <div>
+                <p>GAMING</p>
+                <img src="gaming.jpg" alt="GAMING">
+              
+            </div>
+
+            <div>
+                <p>SPORTS</p>
+                <img src="bball.jpg" alt="BASKETBALL">
+            </div>
+
+            <div>
+                <p>DRIVING</p>
+                <img src="driving.jpg" alt="DRIVING">
+
+            </div>
+    </div>
+</div>
+<footer>
+        <ul>
+            <li><a href="#">Conditions of Use</a></li>
+            <li><a href="#">Privacy Notice</a></li>
+        </ul>
+        <span>&copy; 2023,  Aren MTV</span>
+    </footer>
+
+<script type="text/javascript">
+        $(function(){
+            var scroll = $(document).scrollTop();
+            var navHeight = $('.nav-options').outerHeight();
+
+            $(window).scroll(function(){
+                var scrolled = $(document).scrollTop();
+                if(scrolled > navHeight){
+                    $('.nav-options').addClass('animate');
+                }
+                else{
+                    $('.nav-options').removeClass('animate');
+                }
+
+            })
+
+            if(scrolled > scroll){
+                $('.nav-options').removeClass('sticky');
+            }
+            else{
+                $('.nav-options').addClass('sticky');
+            }
+            scroll = $(document).scrollTop();
+        })
+ </script>
+
+</body>
+</html>
